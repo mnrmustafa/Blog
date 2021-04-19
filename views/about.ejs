@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <!--AOS Animation JS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--Bootsrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <!--CSS-->
+  <link rel="stylesheet" href="/css/aboutstyles.css">
+  <!--AOS ANimation styles-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/a0ff8850a6.js" crossorigin="anonymous"></script>
+  <style>
+    .banner-image {
+      background-image: url('Images/edit2.jpg');
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-blog"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/home" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/contact" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Image  -->
+  <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="imageText">
+      <div data-aos="fade-up" data-aos-duration="500">
+        <h1>Hi!</h1>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="2000">
+        <h1>I'm Sundus</h1>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="about-me">
+
+
+    <h2>About Me</h2>
+    <p> <%= aboutContent %> </p>
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </pre>
+  </div>
+  <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 670) {
+        nav.classList.add('newClass', 'shadow');
+      } else {
+        nav.classList.remove('newClass', 'shadow');
+      }
+    });
+
+    AOS.init();
+  </script>
+
+  <%- include("partials/footer"); -%>
